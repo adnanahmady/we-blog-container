@@ -16,6 +16,9 @@ down:
 status:
 	@docker-compose ps
 
+destroy:
+	@docker-compose down --volumes --remove-orphans
+
 shell:
 	@docker-compose exec $(call default,${service},${mainService}) $(call default,${run},${mainShell})
 
