@@ -39,7 +39,7 @@ services:
       - weBlogDB:/home/pgsql/data
     environment:
       PGDATA: /home/pgsql/data
-      POSTGRES_DB: super_store
+      POSTGRES_DB: we_blog
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: secret
     expose:
@@ -50,7 +50,7 @@ services:
     tmpfs: /home/pgsql/data
     environment:
       PGDATA: /home/pgsql/data
-      POSTGRES_DB: super_store
+      POSTGRES_DB: we_blog
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: secret
     expose:
