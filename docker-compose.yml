@@ -47,9 +47,8 @@ services:
 
   database_for_testing:
     image: postgres:15-alpine
-    tmpfs: /home/pgsql/data
+    tmpfs: /var/lib/postgresql
     environment:
-      PGDATA: /home/pgsql/data
       POSTGRES_DB: we_blog
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: secret
